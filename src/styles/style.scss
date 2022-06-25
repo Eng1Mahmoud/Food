@@ -73,12 +73,6 @@ h6 {
     -o-transition: all .3s linear;
 }
 
-// this class control header when scroll
-.fixed {
-    background: white !important;
-    top: -40px;
-    box-shadow: 0px 0px 10px 0px $gray;
-}
 
 // start  hearoSection
 .hearoSection {
@@ -194,6 +188,7 @@ h6 {
 }
 
 // start header
+// this class control header when scroll
 
 header {
     color: $gray;
@@ -256,7 +251,6 @@ header {
 
         .navbar-toggler:focus {
             box-shadow: 0px 0px 0px 1px $green;
-
         }
 
         .dropdown {
@@ -288,6 +282,13 @@ header {
     }
 }
 
+.fixed {
+    background: white !important;
+    top: -40px;
+    box-shadow: 0px 0px 10px 0px $gray;
+}
+
+// end header 
 //start Carousel
 .Carousel {
     height: 100vh;
@@ -354,6 +355,7 @@ header {
 
 
 }
+
 
 // start about
 .about {
@@ -872,7 +874,7 @@ footer {
     right: 25px;
     width: 70px;
     height: 70px;
-    z-index: 1;
+
 
     .icone {
         background: $orang;

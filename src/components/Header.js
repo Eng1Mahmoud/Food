@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
 import Main from './Main';
-import Navbar from './Navbar';
-
+import Navbars from './Navbar';
 
 function Header() {
+
     let [FixClass, setFixClass] = useState("")
     window.onscroll = () => {
-
+        console.log("scroll")
         if (window.scrollY >= 100) {
 
             setFixClass("fixed")
         }
-        else { setFixClass("") }
+        else { setFixClass("head") }
     }
+
     return (
         <header className={FixClass} >
             <Main />
-            <Navbar />
+            <Navbars />
         </header>
     );
 }
 
-export default React.memo(Header);
+export default Header
