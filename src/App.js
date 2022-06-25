@@ -14,7 +14,7 @@ import Portal from './components/Portal';
 import ScrollTop from './components/ScrollTop'
 
 function App() {
-
+  console.log("Hello ")
   let [louding, setLouding] = useState(false)
   useEffect(() => {
     setTimeout(() => {
